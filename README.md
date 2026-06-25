@@ -35,7 +35,7 @@ If the camera was paired with a different codec, factory-reset, or you're not
 sure — start here. After this it'll trust the codec identity baked into
 `data/`. This must be done seperately for each camera.
 
-FYI: Cameras will have an IP address overlay
+FYI: Cameras will have an IP address overlay unless it is given a DHCP address in the 169.254.1.X/24 space. This is the range the Codecs use for their direct connection to Cisco cameras.
 
 ```bash
 ./provision.py 169.254.1.150
